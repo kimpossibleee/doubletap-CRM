@@ -1,0 +1,169 @@
+/* -----HEADER----- */
+header {
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-columns: 66% 34%;
+    margin: 3%;
+}
+/* level 1.1 */
+.navbar {
+    /* border: 1px solid hotpink; */
+    display: grid;
+    grid-template-columns: 30% 15% 15% 15% 15% 15%;
+
+}
+.signin-try {
+    /* border: 1px solid teal; */
+    display: grid;
+    grid-template-columns: 40% 40%;
+    margin-left: 30%;
+    column-gap: 10%;
+}
+.logo, .nav-buttons, .secondary-buttons{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.nav-buttons, .secondary-buttons {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+
+}
+
+.sign-in {
+    border: 3px solid blue;
+    border-radius: 10px;
+    color: blue;
+
+}
+
+.try-it {
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+}
+
+/* -----MAIN----- */
+main{
+    display: grid;
+    grid-template-columns: 50% 38%;
+    margin: 4% 1% 4% 7%;
+    column-gap: 5%;
+}
+
+/* level 1.1 */
+.about-container{
+    /* border: 1px solid green; */
+    display: grid;
+    grid-template-rows: 45% 13% 6% 4%;
+}
+
+.checkerboard{
+    border: 1px solid red;
+}
+
+.main-writing{
+    border: 1px solid hotpink;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.website-guide-buttons{
+    display: grid;
+    grid-template-columns: 26% 26%;
+    column-gap: 3%;
+}
+
+.final-line-container{
+    display: grid;
+    grid-template-columns: 17% 5% 26% 5% 20%;
+
+}
+.existing-user-container{
+    /* border: 1px solid purple; */
+}
+
+/* level 1.2 */
+
+.company-motto1, .company-hook, .company-promise, .signup-free, .chat-button, .existing-user-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.company-motto1{
+    /* border: 1px solid rgb(0, 0, 0); */
+    font-size: 5em;
+}
+
+.company-hook{
+    font-size: 2.5em;
+}
+
+.company-promise{
+    font-size: 2em;
+}
+
+.signup-free{
+    justify-content: center;
+    border: 1px solid blue;
+    font-size: 1.5em;
+    border-radius: 15px;
+
+}
+.chat-button{
+    justify-content: center;
+    border: 1px solid blue;
+    font-size: 1.5em;
+    border-radius: 15px;
+}
+
+.existing-user-text{
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.final-line-container p{
+    border: 1px solid grey;
+}
+
+
+.checkerboard img{
+    /* border: 1px solid grey; */
+}
+
+/* -----FOOTER----- */
+footer{
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+}
+.footer-size{
+    width: 40%;
+    height: auto;
+}
+.footer-content{
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows: 50% 25% 25%;
+}
+.get-started-container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.footer-final-line-container {
+    display: grid;
+    grid-template-columns: 17% 5% 28% 5% 20%;
+    column-gap: 5%;
+}
+
+.footer-content p, .get-started-container p, .footer-final-line-container p{
+    display: flex;
+    justify-content: center;
+}
