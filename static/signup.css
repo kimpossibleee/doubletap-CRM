@@ -40,11 +40,13 @@ input{
 }
 
 .social-links{
-    display: flex;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }
 
 .social-box{
     display: flex;
+    
     
 }
 .social{
