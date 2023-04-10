@@ -69,3 +69,23 @@ input{
     display: flex;
 }
 
+@media only screen and (max-width:420px) {
+    .column-right{
+        display: none;
+    }
+
+    body{
+        display: flex;
+    }
+    
+    .column-left{
+        width: 100%;
+    }
+    .socials, input{
+        width: 90%;
+    }
+    .signup-button{
+        width: 50%;
+    }
+
+}
