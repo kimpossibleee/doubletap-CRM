@@ -1,31 +1,92 @@
-.inputs{
-    grid-area: forms;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', 'sans serif';
+}
+
+html{
+    height: 100%;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+h1{
+    font-size: 4em;
+}
+.column-right{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-}
-input{
-    width: 300px;
-    border-radius: 50px;
-    margin: 10px;
+   
 }
 
-.social-container{
+input{
+    border-radius: 50px;
+    width: 33vw;
+    height: 80px;
+}
+
+.signin-button{
+    background-color: blue;
+    color: white;
+    width: 12vw;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 1.5em;
+}
+
+.socials{
     display: flex;
-    grid-area: social;
+    width: 25vw;
+    justify-content: space-evenly;
+}
+
+.socials button{
+    background: url(../CRM-Main/googleicon.jpg) no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+
+}
+
+.column-left{
+    display: flex;
+    background-color: blue;
+    border-bottom-right-radius: 80% 25%;
+}
+
+.imageframe{
     flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+    display: flex;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: center;
     align-items: center;
 }
 
-.social-links{
+.column-left h3{
+    font-size: 2em;
+}
+.column-left img{
+    max-width: 100%;
     display: flex;
 }
 
-.social-box{
-    display: flex;
-    
-}
-.social{
-    width: 100%;
+.signup-button{
+    position: relative;
+    background-color: blue;
+    color: white;
+    border-color: white;
+    width: 12vw;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 1.5em;
 }

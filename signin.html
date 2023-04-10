@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-in</title>
-    <link rel="stylesheet" href="./Static/signin.css">
+    <script src="https://use.fontawesome.com/2d88678d82.js"></script>
+    <link rel="stylesheet" href="./static/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <img src="./CRM-Main/Group 15@2x.png" alt="">
+    <div class="column-left">
+        <div class="imageframe">    
+            <h3>Don't Have an Account Yet? <br>What are you waiting for? Let's fix that now!</h3>
+            <form action="signup.html">
+            <button type="submit" class="signup-button"><strong>Sign Up</strong></button>
+        </form>
+            <img src="./CRM-Main/Group 15@2x.png" alt="illustration">
+        </div>
+    </div>
 
-    <!-- <div class="flexbox form-container"> -->
-        <div class="flexbox inputs">
-            <h1>Sign Up</h1>
-    
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <button>Sign Up</button>
+    <div class="column-right">
+
+        <h1>Sign In</h1>
+        <input type="text" class="username">
+        <input type="text" class="email">
+        <input type="text" class="passwd">
+        <button type="submit" class="signin-button"><strong>Sign In</strong></button>
+        <p><strong> Or Sign in with social platforms</strong></p>
+        <div class="socials">
+            <button type="submit"></button>
+            <button type="submit"></button>
+            <button type="submit"></button>
+            <button type="submit"></button>
         </div>
-        <!-- </div> -->
-    
-    
-        <div class="flexbox social-container">
-            <p>Or Sign up with social platforms</p>
-            <div class="flexbox social-links">
-    
-                <div class="social-box">
-                    <a href="#" class="social"><img src="./CRM-Main/Path 151@2x.png" alt=""></a>
-                </div>
-    
-                <div class="social-box">
-                    <a href="#" class="social"><img src="./CRM-Main/Path 152@2x.png" alt=""></a>
-                </div>
-    
-                <div class="social-box">
-                    <a href="#" class="social"><img src="./CRM-Main/Path 151@2x.png" alt=""></a>
-                </div>
-    
-                <div class="social-box">
-                    <a href="#" class="social"><img src="./CRM-Main/Path 152@2x.png" alt=""></a>
-                </div>
-            </div>
-        </div>
-    
+    </div>
 
 </body>
+
 </html>
