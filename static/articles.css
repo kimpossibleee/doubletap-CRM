@@ -1,10 +1,4 @@
 /* Ben's CSS file for main (middle page) articles */
-
-main {
-    margin: 0px;
-    padding: 0px;
-}
-
 .middle-index{
     display: grid;
     justify-items: center;
@@ -77,16 +71,18 @@ main {
 .info-text{
     grid-area: txt;
     padding: 0px 50px 20px;
-    background-color: blue;
+    background-color: rgb(7,80,247);
     color: white;
+    border-radius: 20px;
 }
 
 .info-how{
     grid-area: txt;
     padding: 60px 40px;
     margin-left: 20px;
-    background-color: blue;
+    background-color: rgb(7,80,247);
     color: white;
+    border-radius: 20px;
 }
 
 .info-text li{
