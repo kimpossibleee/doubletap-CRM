@@ -69,7 +69,7 @@ input{
     display: flex;
 }
 
-@media only screen and (max-width:420px) {
+@media only screen and (max-width:768px) {
     .column-right{
         display: none;
     }
@@ -82,10 +82,12 @@ input{
         width: 100%;
     }
     .socials, input{
-        width: 90%;
+        width: 80%;
+        height: 15vw;
     }
     .signup-button{
-        width: 50%;
+        width: 50vw;
+        height: 10vw;
     }
 
 }
