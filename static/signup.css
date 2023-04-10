@@ -1,60 +1,71 @@
-body{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "forms . ."
-    "forms image ."
-    "social image .";
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', 'sans serif';
 }
 
+html{
+    height: 100%;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
 
-
-/* Ignore me
-.form-container{
-    display: flex;
-    grid-area: forms;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-} */
-
-.inputs{
-    grid-area: forms;
+h1{
+    font-size: 4em;
+}
+.column-left{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+   
 }
+
 input{
-    width: 300px;
     border-radius: 50px;
-    margin: 10px;
+    width: 33vw;
+    height: 80px;
 }
 
-.social-container{
+.signup-button{
+    background-color: blue;
+    color: white;
+    width: 12vw;
+    height: 70px;
+    border-radius: 50px;
+    font-size: 1.5em;
+}
+
+.socials{
     display: flex;
-    grid-area: social;
-    flex-direction: column;
-    align-items: center;
+    width: 25vw;
+    justify-content: space-evenly;
 }
 
-.social-links{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
+.socials button{
+    background: url(../CRM-Main/googleicon.jpg) no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+
 }
 
-.social-box{
+.column-right{
     display: flex;
-    
-    
-}
-.social{
-    width: 100%;
 }
 
-.illustration{
+.imageframe{
     display: flex;
-    grid-area: image;
-    width: 100%;
+    margin-right: 50px;
+    margin-top: 50px;
 }
+.column-right img{
+    max-width: 100%;
+    display: flex;
+}
+
