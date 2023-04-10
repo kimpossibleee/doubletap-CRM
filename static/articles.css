@@ -42,7 +42,7 @@ main {
     display:grid;
     grid-auto-rows: auto;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
     "icon icon icon icon";
 }
 
@@ -57,7 +57,7 @@ main {
     display: grid;
     grid-auto-rows: auto;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: 
+    grid-template-areas:
     "pic pic txt txt txt";
 }
 
@@ -113,8 +113,8 @@ main {
     display:grid;
     grid-auto-rows: auto;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "card card" 
+    grid-template-areas:
+    "card card"
     "card card";
 }
 
@@ -138,7 +138,7 @@ main {
     text-decoration: none;
 }
 
-@media(max-width: 420px){
+@media(max-width: 768px){
    /* Index page queries */
     .middle-index{
         align-items: center;
@@ -146,7 +146,7 @@ main {
 
     .article-icons{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
         "icon icon"
         "icon icon";
     }
@@ -154,7 +154,7 @@ main {
     .article-info{   /*Also used in how page*/
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 
+        grid-template-areas:
         "txt";
     }
 
@@ -168,8 +168,8 @@ main {
 
     .solutions{
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: 
-    "card card" 
+    grid-template-areas:
+    "card card"
     "card card";
     }
 
@@ -187,7 +187,7 @@ main {
         padding: 5px 5px;
         margin: 10px;
     }
-    
+
     .info-container{
         text-align: center;
         margin: 0px;
