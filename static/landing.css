@@ -286,6 +286,9 @@ header {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
         column-gap: none;
+        background-color: rgb(209, 224, 255);
+        margin: 0%;
+        padding: 3%;
     }
     .navbar{
         grid-template-columns: 100%
@@ -296,11 +299,24 @@ header {
         grid-template-columns: 1fr 1fr;
         margin-left: 0%;
         column-gap: 10%;
-        margin-top: 4%;
-        margin-bottom: 5%;
-
+        margin-top: 5%;
+        margin-bottom: 4%;
     }
 
+    .try-it {
+        border: 1px solid rgb(7,80,247);
+        border-radius: 10px;
+        background-color: rgb(7,80,247);
+        color: white;
+        background:linear-gradient(rgb(150, 182, 255), rgb(7,80,247))
+    }
+
+    .sign-in {
+        border: .2vw solid rgb(7,80,247);
+        border-radius: 10px;
+        color: rgb(7,80,247);
+        background: linear-gradient(white, rgb(133, 170, 255));
+    }
     .secondary-buttons{
         /* border: 1px solid black; */
         font-size: 3vw;
@@ -308,5 +324,40 @@ header {
     }
     .navbar a {
         display: none;
+    }
+    .banner-page{
+        /* border: 1px solid hotpink; */
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: none;
+        margin: 2% 4% 1% 8%;
+    }
+    .about-container{
+        /* border: 1px solid green; */
+        padding-top: 5%;
+        display: grid;
+        grid-template-rows: 60% 14% 10% 10%;
+    }
+    .company-promise{
+        /* font-size: 2em; */
+        font-size: 2.2vw;
+        font-weight: 600;
+        margin-top: 0%;
+        color: grey;
+        margin-bottom: 3%;
+        margin-right: 2%;
+    }
+    .website-guide-buttons p{
+        margin-bottom: 0%;
+    }
+
+
+    .signup-free, .chat-button{
+        font-size: 2.5vw;
+        border-radius: 1vw;
+        font-weight: 700;
+    }
+    .final-line-container{
+        display:none;
     }
 }
