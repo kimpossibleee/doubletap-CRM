@@ -5,4 +5,191 @@ main {
     padding: 0px;
 }
 
-/* Test changes */
+.middle-index{
+    display: grid;
+    justify-items: center;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+    "article-title"
+    "article-icons"
+    "article-info"
+    "solutions-header"
+    "solutions";
+}
+
+.article-title{
+    grid-area: article-title;
+    text-align: center;
+}
+
+.article-text{
+    text-align: center;
+    padding: 0px;
+    margin: 10px 80px;
+    font-size: small;
+}
+
+.article-text{
+    text-align: center;
+    padding: 10px 80px;
+}
+
+.article-icons{
+    grid-area: article-icons;
+    margin: 30px 100px;
+    justify-items: center;
+    display:grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    "icon icon icon icon";
+}
+
+.article-icons img{
+    max-height: 120px;
+    max-width: 120px;
+}
+
+.article-info{
+    grid-area: article-info;
+    margin: 30px 45px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+    "pic pic txt txt txt";
+}
+
+.article-radius{
+    border-radius: 20px;
+}
+
+.info-pic{
+    grid-area: pic;
+    justify-content: center;
+}
+
+.info-pic img{
+    height: 430px;
+}
+
+.info-text{
+    grid-area: txt;
+    padding: 0px 50px 20px;
+    background-color: blue;
+    color: white;
+}
+
+.info-how{
+    grid-area: txt;
+    padding: 60px 40px;
+    margin-left: 20px;
+    background-color: blue;
+    color: white;
+}
+
+.info-text li{
+    font-size: small;
+}
+
+.info-learn-more{
+    padding: 5px 40px;
+    border: 2px solid white;
+    margin-bottom: px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.solutions-header{
+    grid-area: solutions-header;
+}
+
+.solutions{
+    grid-area: solutions;
+    margin: 30px 100px;
+    justify-items: center;
+    display:grid;
+    grid-auto-rows: auto;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "card card" 
+    "card card";
+}
+
+.card img{
+    height: 120px;
+    width: 120px;
+}
+
+.card{
+    text-align: center;
+    padding: 5px 50px;
+    margin-top: 15px;
+    font-size: small;
+}
+
+.card a{
+    padding: 5px 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: black;
+    text-decoration: none;
+}
+
+@media(max-width: 420px){
+   /* Index page queries */
+    .middle-index{
+        align-items: center;
+    }
+
+    .article-icons{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "icon icon"
+        "icon icon";
+    }
+
+    .article-info{   /*Also used in how page*/
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: 
+        "txt";
+    }
+
+    .info-text{
+        text-align: center;
+    }
+
+    .info-pic img{
+        display: none;
+    }
+
+    .solutions{
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "card card" 
+    "card card";
+    }
+
+    .card{
+        margin: 10px 0px;
+    }
+
+    .card a{
+        padding: 5px;
+    }
+
+    /* How page media queries */
+    .article-text{
+        text-align: center;
+        padding: 5px 5px;
+        margin: 10px;
+    }
+    
+    .info-container{
+        text-align: center;
+        margin: 0px;
+    }
+}
