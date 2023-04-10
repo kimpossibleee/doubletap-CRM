@@ -95,7 +95,7 @@ input{
 .column-right a{
     display: none;
 }
-@media only screen and (max-width:420px) {
+@media only screen and (max-width:768px) {
     .column-left{
         display: none;
     }
@@ -108,10 +108,12 @@ input{
         width: 100%;
     }
     .socials, input{
-        width: 90%;
+        width: 80vw;
+        height: 15vw;
     }
     .signin-button{
-        width: 50%;
+        width: 50vw;
+        height: 10vw;
     }
     .column-right a{
         display: block;
